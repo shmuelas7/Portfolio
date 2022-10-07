@@ -1,12 +1,13 @@
 import React from "react";
 import styles from './style.module.css';
+import Toggle from "../Toggle";
 const navbar = () => {
     return (
         <div className={styles.container} id="Navbar">
 
             <div className={styles.left}>
                 <div className="name">Shmuel</div>
-                <p>toglle</p>
+                <Toggle />
             </div>
             <div className={styles.right}>
                 <div className={styles.list}>

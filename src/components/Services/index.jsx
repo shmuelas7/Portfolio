@@ -2,15 +2,20 @@ import React, { useContext } from "react";
 import Card from "../Card";
 import Resume from './resume.pdf';
 import styles from './style.module.css';
+import { themeContext } from "../../context/themeContext";
 
 
 
 const Services = () => {
+    // context
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
 
 
     return (
         <div className={styles.services} id="services">
             <div className={styles.awesome}>
+                <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
                 <span>services</span>
                 <spane>
                     Lorem ispum is simpley dummy text of printing of printing Lorem
