@@ -34,6 +34,7 @@ const Contact = () => {
             <div className={styles.w_left}>
                 <div className={styles.awesome}>
                     <span style={{ color: darkMode ? 'white' : '' }}>Get in Touch</span>
+                    <br />
                     <span>Contact me</span>
                     <div
                         className={`blur ${styles.s_blur1}`}

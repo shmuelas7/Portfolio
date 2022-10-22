@@ -1,9 +1,8 @@
 import styles from './style.module.css';
 import React, { useContext } from "react";
 import boy from "../../img/boy.png";
-import Github from "../../img/github.png";
-import LinkedIn from "../../img/linkedin.png";
-import Instagram from "../../img/instagram.png";
+import { BsLinkedin } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 import { themeContext } from "../../context/themeContext";
 
 const Intro = () => {
@@ -12,30 +11,36 @@ const Intro = () => {
     const darkMode = theme.state.darkMode;
 
     return (
-        <div className={styles.Intro} id="Intro">
+        <>
+            <div className={styles.Intro} id="Intro">
 
-            <div className={styles.left}>
-                <div className={styles.name}>
-                    <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-                    <span>Shmuel Asherov</span>
-                    <span>
-                        FullStack Developer with high level of experience in web designing
-                        and development, producting the Quality work
-                    </span>
+                <div className={styles.left}>
+                    <div className={styles.icons}>
+                        <a href='https://github.com/shmuelas7'>
+                            <BsGithub size="50px" />
+                        </a>
+                        <a href='https://www.linkedin.com/in/shmuel-asherov-79608718b/'>
+                            <BsLinkedin size="50px" />
+                        </a>
+                    </div>
+                    <div className={styles.name}>
+                        <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
+                        <span>Shmuel Asherov</span>
+                        <span>
+                            FullStack Developer with high level of experience in web designing
+                            and development, producting the Quality work
+                        </span>
+                        <button className={`button ${styles.introButton}`}>Hire me</button>
+                    </div>
+
                 </div>
 
-                <button className={`button ${styles.introButton}`}>Hire me</button>
-                <div className={styles.icons}>
-                    <img src={Github} alt="" />
-                    <img src={LinkedIn} alt="" />
-                    <img src={Instagram} alt="" />
+                <div className={styles.right}>
+                    <img src={boy} className={styles.profile} alt="" />
                 </div>
             </div>
 
-            <div className={styles.right}>
-                <img src={boy} className={styles.profile} alt="" />
-            </div>
-        </div>
+        </>
     );
 };
 

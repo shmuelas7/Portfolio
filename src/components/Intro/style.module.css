@@ -1,15 +1,15 @@
 .Intro {
     display: flex;
-    height: 77vh;
     margin-top: 6rem;
+    padding: 0.5rem 3.5rem;
+    width: 100%;
+
 }
 
 /* left side styling */
 .left {
     display: flex;
     position: relative;
-    flex: 1;
-    flex-direction: column;
     gap: 2rem;
 }
 
@@ -41,16 +41,18 @@
 .introButton {
     width: 6rem;
     height: 2rem;
+    margin-top: 30px;
 }
 
 .icons {
-    margin-top: 3rem;
     display: flex;
-    gap: 0rem;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .icons>* {
     transform: scale(0.5);
+
 }
 
 .icons>*:hover {
@@ -58,43 +60,20 @@
 }
 
 /* right side styling */
+
 .right {
     flex: 1;
-    position: relative;
-}
-
-.right>* {
-    position: absolute;
-    z-index: 1;
-}
-
-.right> :nth-child(1) {
-    transform: scale(0.69);
-    left: -15%;
-    top: -9%;
-}
-
-.right> :nth-child(2) {
-    top: -4.6rem;
-    transform: scale(0.67);
-    left: -3rem;
-}
-
-.right> :nth-child(3) {
-    transform: scale(1.4);
-    left: 28%;
-}
-
-.right> :nth-child(4) {
-    transform: scale(0.62);
-    top: -19%;
-    left: -24%;
-    border-radius: 50%;
-    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .profile {
-    height: 50%;
+
+    height: 70%;
+
+    border-radius: 25px;
+    position: absolute;
+    top: 95px;
 }
 
 
@@ -102,7 +81,6 @@
 @media screen and (max-width: 480px) {
     .Intro {
         flex-direction: column;
-        gap: 7rem;
         height: 64rem;
     }
 
@@ -115,9 +93,4 @@
         display: none;
     }
 
-    .floating-div:nth-of-type(1) {
-        /* display: none; */
-        top: -7rem !important;
-        ;
-    }
 }
