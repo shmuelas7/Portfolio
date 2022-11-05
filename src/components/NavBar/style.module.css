@@ -1,15 +1,15 @@
 .container {
-    height: 10vh;
     display: flex;
+    height: 10vh;
     justify-content: space-between;
     margin-bottom: 2rem;
     position: fixed;
-    background: #8ecae6;
+    background: #C9E3E7;
     width: 100%;
     z-index: 5;
 }
 
-.left {
+/* .left {
     flex: 1;
     align-items: center;
     justify-content: left;
@@ -20,28 +20,37 @@
 .name {
     font-size: 1.3rem;
     font-weight: bold;
-}
+} */
 
-.right {
+.center {
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: end;
     font-weight: 400;
 }
 
 .list {
-    flex: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .list>ul {
     display: flex;
     gap: 2rem;
     margin-right: 4rem;
+    color: #2954A3;
+    font-size: 15
+}
+.list>ul>li{
+    padding-right: 40px;
+    border-right: solid 1px;
+    border-color:#2954A3 ;
 }
 
 .list>ul :hover {
-    color: var(--orange);
+    color: white;
     cursor: pointer;
 }
 
@@ -49,8 +58,38 @@
     flex: 2;
 }
 
+.right{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    gap: 16px;
+ 
+}
+.icon{
+    color: #2954A3;
+    cursor: pointer;
+    font-size: 25px;
+
+}
+.hide{
+    visibility:hidden ;
+}
+.icon :hover{
+    color:white;
+}
+
 @media screen and (max-width: 480px) {
-    .list {
+    .center {
         display: none;
     }
+    .right{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .hide{
+        visibility: visible
+    }
+    
 }

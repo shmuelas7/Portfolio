@@ -23,7 +23,8 @@
 }
 
 .button {
-  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+  background: #C9E3E7;
+
   border-radius: 34px;
   border: none;
   color: white;
@@ -32,10 +33,10 @@
 }
 
 .button:hover {
-  background: white;
+  background: #2954A3;
   cursor: pointer;
-  border: 1px solid var(--orange);
-  color: var(--orange);
+  border: 1px solid white;
+  color: white;
 }
 
 /* @media screen and (max-width: 480px) {
