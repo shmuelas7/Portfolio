@@ -8,6 +8,7 @@ const Experience = () => {
 
   return (
     <div className={styles.experience} id="experience">
+      <h2 className={styles.header}> Experience</h2>
       <div className={styles.content}>
         <div className={styles.data}>
           <div>

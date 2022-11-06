@@ -1,11 +1,14 @@
 .h1{
     display: flex;
     justify-content: center;
+    color: #2954A3;
+    font-size: 32px;
 }
 .skills_container{
     row-gap: 0;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
+    padding: 0 15% 0 15%
 }
 .skills_content{
     margin-right: 7%;
@@ -16,11 +19,12 @@
     align-items: center;
     margin-bottom: 2px;
     cursor: pointer;
+    
 }
 .skills_icon,
 .skills_arrow{
-    font-size: 2rem;
-    color: blue;
+    font-size: 26px;
+    color: #2954A3;
 }
 
 .skills_icon{
@@ -28,10 +32,11 @@
 }
 
 .skills_title{
-    font-size: 15px;
+    font-size:20px;
+    color:#2954A3
 }
 .skills_subtitle{
-    font-size: 7px;
+    font-size: 20Px;
 }
 .skills_arrow{
 margin-left: auto;
@@ -45,7 +50,7 @@ transition: 2s;
 }
 
 .skills_name{
-    font-size: 10px;
+    font-size: 20px;
     font-weight:7px;
 }
 .skills_bar,
@@ -55,12 +60,12 @@ transition: 2s;
 }
 
 .skills_bar{
-    background-color: blue;
+    background-color: #2954A3;
 }
 
 .skills_percentage{
     display: block;
-    background-color: black;
+    background-color: #C9E3E7;
 }
 .skills_HTML{
     width: 90%;
@@ -87,4 +92,13 @@ transition: 2s;
 .skills_css{
     width: 50%;
 }
+.box_left{
+    margin-left: 20%;
+}
+.box_right{
+margin-right: 20%;
+}
+/* .server{
+    padding: 0 0 0 120px;
+} */
 

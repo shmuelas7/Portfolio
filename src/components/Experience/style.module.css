@@ -1,16 +1,12 @@
 .experience {
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
-    /* gap: 5rem; */
-    /* margin-bottom: 8rem; */
-    /* darkmode */
-    color: var(--black);
+  flex-direction: column;
+  margin-top: 150px;
 }
-.tabs{
-    display:flex ;
-    justify-content: space-evenly;
-    margin-bottom: 2px;
+.header{
+    display: flex;
+    justify-content: center;
+    color: #2954A3;
 }
 .bottom{
     font-size: 10px;
@@ -23,7 +19,30 @@
 }
 .data{
     display: grid;
-    grid-template-columns: fr max-content 1fr;
+    grid-template-columns: 1fr max-content 1fr;
     column-gap: 1.5rem;
-
+}
+.title{
+    font-size: 20px;
+}
+.subtitle{
+    display: block;
+    margin-bottom: 3px;
+}
+.cleander{
+    font-size: 20px;
+}
+.rounder{ 
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: #2954A3;
+    border-radius: 50%;
+}
+.line{
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: #2954A3;
+    transform: translate(6px, -7px);
 }

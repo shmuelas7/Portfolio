@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import Card from "../Card";
 import Resume from "./resume.pdf";
 import styles from "./style.module.css";
 import { themeContext } from "../../context/themeContext";
+import famely from "../../img/femaly.jpg";
 
 const AboutMe = () => {
   // context
@@ -25,7 +25,7 @@ const AboutMe = () => {
         </div>
       </div>
       <div className={styles.cards}>
-        <img src="bbb" alt="hh" />
+        <img src={famely} alt="hh" className={styles.img} />
       </div>
     </div>
   );

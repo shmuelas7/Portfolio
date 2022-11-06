@@ -6,6 +6,9 @@
     height: 70vh;
 
 }
+.span{
+    font-size: 26px;
+}
 
 /* heading */
 .portfolio span:nth-of-type(1) {

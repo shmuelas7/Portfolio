@@ -7,6 +7,8 @@
     margin-bottom: 13rem;
     /* scroll view */
     padding-top: 3rem;
+    padding: 0 10% 0 10%;
+    height: 400px;
 }
 
 .header {
@@ -19,8 +21,8 @@
 /* left side */
 .box {
     display: flex;
-    flex-direction: row-reverse;
     position: relative;
+    width: 100%;
     /* gap: 20px; */
 }
 
@@ -29,11 +31,24 @@
     flex-direction: column;
     align-items: center;
     background-color: #C9E3E7;
-    border-radius: 48px;
+    border-top-right-radius: 80px 80px;
+    /* border-radius: 48px; */
     height: 100%;
     color:#2954A3;
-    padding: 5%;
+    padding: 0 5% 0 5%;
+    height: 100%
 
+}
+.cards{
+    display: flex;
+    justify-content: end;
+
+width: 100% ;
+}
+.img{
+    border-top-left-radius: 80px 80px;
+    width: 100%;
+    height: 100%
 }
 
 
