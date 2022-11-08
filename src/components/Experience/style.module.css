@@ -2,11 +2,14 @@
     display: flex;
   flex-direction: column;
   margin-top: 150px;
+  justify-content: center;
+  align-items: center;
 }
 .header{
     display: flex;
     justify-content: center;
     color: #2954A3;
+    font-size: 32px;
 }
 .bottom{
     font-size: 10px;
@@ -14,20 +17,25 @@
     cursor: pointer;
 }
 .icon{
-    font-size: 15px;
+    font-size: 20px;
     margin-right: 25px;
+    color: #2954A3;
 }
 .data{
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     column-gap: 1.5rem;
 }
+
+
 .title{
     font-size: 20px;
+    color: #2954A3;
 }
 .subtitle{
     display: block;
     margin-bottom: 3px;
+    color: #2954A3;
 }
 .cleander{
     font-size: 20px;
@@ -45,4 +53,29 @@
     height: 100%;
     background-color: #2954A3;
     transform: translate(6px, -7px);
+}
+.content{
+    width: 500px;
+}
+.year{
+    color: #2954A3;
+}
+
+@media screen and (max-width: 480px) {
+
+    .content{
+        width: 300px;
+    }
+    .cleander{
+        font-size: 10px;
+    }
+    .year{
+        color: #2954A3;
+        font-size: 15px;
+    }
+    .experience {
+ 
+      margin-top: 50px;
+    
+    }
 }

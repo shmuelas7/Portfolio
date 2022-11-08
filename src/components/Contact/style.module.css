@@ -1,7 +1,6 @@
 .contact_form {
     padding: 0 3rem 0 3rem;
     display: flex;
-    height: 80vh;
     margin-top: 2rem;
    
 }
@@ -64,7 +63,6 @@ textarea {
     display: flex;
     margin-top:20px;
     height: 70px;
-    
     width: 300px;
 }
 .container{
@@ -76,13 +74,39 @@ margin-left: 40%;
 @media screen and (max-width: 480px) {
     .contact_form {
         padding: 0;
-        flex-direction: column;
-        gap: 5rem;
-        height: 40rem;
+        flex-direction: column-reverse;
+
     }
 
     .c_right .user {
         width: 16rem;
     }
 
+    .container{
+    display: flex;
+    justify-content:;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 0;
+    background-color: #C9E3E7;
+    }
+    .box{
+        width: 40%;
+        height: 30px;
+    }
+    .mail{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+.icon{
+    font-size: 20px;
+}
+.span{
+    margin-bottom: 10px;
+    margin-left: 5px;
+    color: #2954A3;
+    font-size: 17px;
+    
+}
 }

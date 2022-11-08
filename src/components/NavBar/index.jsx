@@ -48,7 +48,9 @@ const navbar = () => {
       <div className={styles.right}>
         <Toggle />
         <BsGlobe className={styles.icon} />
-        <FiGithub className={styles.icon} />
+        <a href="https://github.com/shmuelas7">
+          <FiGithub className={styles.icon} />
+        </a>
         <BsList className={`${styles.icon}  ${styles.hide}`} />
       </div>
     </div>

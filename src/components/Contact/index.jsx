@@ -42,13 +42,14 @@ const Contact = () => {
               <FiPhoneCall className={styles.icon} />
               <span className={styles.span}>0533329773</span>
             </div>
-            <div className={styles.box}>
-              <SiGmail className={styles.icon} />
-              <span className={styles.span}>shmuelas7@gmail.com</span>
-            </div>
+
             <div className={styles.box}>
               <AiFillLinkedin className={styles.icon} />
               <span className={styles.span}>Shmuel Asherov</span>
+            </div>
+            <div className={`${styles.box} ${styles.mail}`}>
+              <SiGmail className={styles.icon} />
+              <span className={styles.span}>shmuelas7@gmail.com</span>
             </div>
           </div>
         </div>

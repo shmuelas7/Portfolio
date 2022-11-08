@@ -16,11 +16,11 @@
   color: var(--black);
 }
 
-.pad {
+/* .pad {
   padding: 0.5rem 3.5rem;
   display: flex;
   width: 100%;
-}
+} */
 
 .button {
   background: #C9E3E7;

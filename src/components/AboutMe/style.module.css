@@ -2,8 +2,7 @@
     padding: 0 3rem 0 3rem;
     display: flex;
     flex-direction: row-reverse;
-    margin-bottom: 8rem;
-    margin-top: 9rem;
+    margin-top: 150px;
     margin-bottom: 13rem;
     /* scroll view */
     padding-top: 3rem;
@@ -32,11 +31,10 @@
     align-items: center;
     background-color: #C9E3E7;
     border-top-right-radius: 80px 80px;
-    /* border-radius: 48px; */
+    
     height: 100%;
     color:#2954A3;
     padding: 0 5% 0 5%;
-    height: 100%
 
 }
 .cards{
@@ -74,6 +72,16 @@ width: 100% ;
         gap: 5rem;
         height: 66rem;
         padding: 0;
+    }
+    .cards{
+        display: none;
+    }
+    .text{
+        height: 570px;
+        border-radius: 48px;
+    }
+    .span{
+        text-align: center;
     }
 
 }

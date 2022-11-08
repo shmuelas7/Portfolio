@@ -19,8 +19,9 @@ const Intro = () => {
             <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
             <span>Shmuel Asherov</span>
             <span>
-              FullStack Developer with high level of experience in web designing
-              and development, producting the Quality work
+              FullStack Developer skilled in java script, react, mongo, nodeJS.
+              practical engineering professional graduated from Ariel
+              University.
             </span>
             <button className={`button ${styles.introButton}`}>Hire me</button>
           </div>
